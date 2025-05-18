@@ -1,22 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// --- Types ---
 interface Notification {
   message: string;
   timestamp: string;
 }
 type NotificationType = 'email' | 'sms' | 'in-app';
 
-// --- Props for the form component ---
 interface NotificationFormProps {
   onSend: (payload: Record<string, any>) => Promise<void>;
 }
 
-/**
- * A simple form where you choose a type and write a message.
- * I tried to make it work, hope it doesn't break.
- */
 const NotificationForm: React.FC<NotificationFormProps> = ({ onSend }) => {
   const [type, setType] = useState<NotificationType>('email');
   const [recipient, setRecipient] = useState('');
@@ -41,7 +35,6 @@ const NotificationForm: React.FC<NotificationFormProps> = ({ onSend }) => {
     try {
       await onSend(payload);
       window.alert('I think it sent. I hope it worked.');
-      // Clear fields that were used
       setBody('');
       if (type !== 'in-app') setRecipient('');
       if (type === 'email') setSubject('');
@@ -127,14 +120,11 @@ const NotificationForm: React.FC<NotificationFormProps> = ({ onSend }) => {
   );
 };
 
-// --- Notifications List ---
 interface NotificationsListProps {
   notifications: Notification[];
 }
 
-/**
- * Shows fetched notifications, I hope it looks okay.
- */
+
 const NotificationsList: React.FC<NotificationsListProps> = ({ notifications }) => {
   if (!notifications.length) return <p>No messages right now.</p>;
 
@@ -152,7 +142,6 @@ const NotificationsList: React.FC<NotificationsListProps> = ({ notifications }) 
   );
 };
 
-// --- Main App ---
 const App: React.FC = () => {
   const [notifications, setNotifications] = useState<Notification[]>([]);
   const [viewingUser, setViewingUser] = useState('');
@@ -189,7 +178,7 @@ const App: React.FC = () => {
               className="flex-1 p-2 border rounded"
             />
             <button
-              onClick={() => { /* useEffect will fetch */ }}
+              onClick={() => { }}
               className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"
             >
               Refresh
