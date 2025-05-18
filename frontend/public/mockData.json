@@ -1,0 +1,58 @@
+{
+  "notifications": [
+    {
+      "id": "1",
+      "type": "email",
+      "title": "Welcome to our platform",
+      "message": "Thank you for signing up! We're excited to have you join our community. Here's some information to help you get started.",
+      "isRead": false,
+      "createdAt": "2025-07-01T10:30:00Z",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "type": "sms",
+      "title": "Verification code",
+      "message": "Your verification code is 123456. It will expire in 10 minutes.",
+      "isRead": true,
+      "createdAt": "2025-07-01T11:15:00Z",
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "type": "in-app",
+      "title": "New feature available",
+      "message": "We've just launched a new feature that we think you'll love. Check it out in your dashboard!",
+      "isRead": false,
+      "createdAt": "2025-07-02T09:45:00Z",
+      "userId": "1"
+    },
+    {
+      "id": "4",
+      "type": "email",
+      "title": "Your weekly summary",
+      "message": "Here's a summary of your activity this week. You've made great progress!",
+      "isRead": false,
+      "createdAt": "2025-07-03T08:20:00Z",
+      "userId": "1"
+    },
+    {
+      "id": "5",
+      "type": "in-app",
+      "title": "Action required",
+      "message": "Please update your profile information to ensure we can provide you with the best service.",
+      "isRead": true,
+      "createdAt": "2025-07-03T15:10:00Z",
+      "userId": "1"
+    },
+    {
+      "id": "6",
+      "type": "sms",
+      "title": "Payment successful",
+      "message": "Your payment of $49.99 has been successfully processed. Thank you for your purchase!",
+      "isRead": false,
+      "createdAt": "2025-07-04T12:30:00Z",
+      "userId": "1"
+    }
+  ]
+}
