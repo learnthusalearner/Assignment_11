@@ -23,7 +23,7 @@ The system is designed to help users compose, send, and view notifications with 
 
 ### Clone the repository
 
-git clone https://github.com/your-username/notification-system.git
+https://github.com/learnthusalearner/Assignment_11.git    
 cd notification-system
 
 
