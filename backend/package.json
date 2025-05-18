@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "\t",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learnthusalearner/Assignment_11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/learnthusalearner/Assignment_11/issues"
+  },
+  "homepage": "https://github.com/learnthusalearner/Assignment_11#readme",
+  "description": ""
+}
